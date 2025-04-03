@@ -4,9 +4,10 @@ import edu.eci.arsw.myrestaurant.model.Order;
 import edu.eci.arsw.myrestaurant.model.RestaurantProduct;
 import edu.eci.arsw.myrestaurant.beans.BillCalculator;
 import java.util.Map;
-import org.springframework.stereotype.Service;
 
+import org.springframework.stereotype.Component;
 
+@Component
 public class BasicBillCalculator implements BillCalculator {
 
 	@Override
@@ -19,4 +20,7 @@ public class BasicBillCalculator implements BillCalculator {
 		return total;
 	}
 
+
 }
+
+

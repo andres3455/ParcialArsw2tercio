@@ -7,7 +7,11 @@ package edu.eci.arsw.myrestaurant.services;
 
 import edu.eci.arsw.myrestaurant.model.Order;
 import edu.eci.arsw.myrestaurant.model.RestaurantProduct;
+
+import java.util.Map;
 import java.util.Set;
+
+import org.springframework.stereotype.Component;
 
 /**
  *
@@ -28,5 +32,7 @@ public interface RestaurantOrderServices {
     Set<Integer> getTablesWithOrders();
 
     void releaseTable(int tableNumber) throws OrderServicesException;
+
+    Map<String, RestaurantProduct> getProductsMap();
     
 }

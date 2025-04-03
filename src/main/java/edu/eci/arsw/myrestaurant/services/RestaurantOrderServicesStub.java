@@ -108,4 +108,11 @@ public class RestaurantOrderServicesStub implements RestaurantOrderServices {
         tableOrders.put(3, o2);
     }
 
+
+    @Override
+    public Map<String, RestaurantProduct> getProductsMap() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getProductsMap'");
+    }
+
 }

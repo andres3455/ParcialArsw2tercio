@@ -9,6 +9,7 @@ public class Order {
 
 
     private Map<String, Integer> orderAmountsMap;
+    private int totalBill;
 
     public Map<String, Integer> getOrderAmountsMap() {
         return orderAmountsMap;
@@ -44,6 +45,7 @@ public class Order {
         }
     }
 
+
     @JsonIgnore
     public Set<String> getOrderedDishes() {
         return orderAmountsMap.keySet();
@@ -66,5 +68,15 @@ public class Order {
         return sb.toString();
 
     }
+
+    public int getTotalBill() {
+        return totalBill;
+    }
+
+    public void setTotalBill(int totalBill) {
+        this.totalBill = totalBill;
+    }
+
+
 
 }
